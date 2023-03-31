@@ -51,17 +51,18 @@ const NewRegistrationPage = () => {
       <h1>New Registration</h1>
       <form className="registration-form" onSubmit={handleSubmit}>
         <label>
-          Username <input type="text" value={username} onChange={handleUsernameChange} />
+          Username <input type="text" value={username} onChange={handleUsernameChange}  placeholder="enter your username"/>
         </label>
         <br />
         <label>
-          Password <input type="password" value={password} onChange={handlePasswordChange} />
+          Password <input type="password" value={password} onChange={handlePasswordChange} placeholder="enter your password"/>
         </label>
         <br />
-        <label>
-          Email <input type="email" value={email} onChange={handleEmailChange} />
-        </label>
+        <label>Email<input type="text" value={email} onChange={handleEmailChange} 
+          placeholder="enter your email" className='zxinx'/>
+      </label> 
         <br />
+      
         <button className='register-button' type="submit">Register</button>
         <br />
         <p className='existing-account'>

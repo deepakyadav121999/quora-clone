@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+
 
 body{
     font-family: 'Fira Sans', sans-serif;
@@ -6,22 +6,22 @@ body{
 }
 
 .registration-container {
+  border: 1px solid grey;
+  border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 500px;
+    width: 500px;
+    
   }
   
   .existing-account {
     font-size: 1.2em;
     margin-bottom: 20px;
-  }
-  
-  .registration-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   
   .register-button {
@@ -31,5 +31,8 @@ body{
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
+  }
+  .nba{
+    width: 50px
   }
   

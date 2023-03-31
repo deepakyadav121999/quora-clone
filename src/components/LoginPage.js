@@ -28,23 +28,41 @@ function LoginPage() {
   };
 
   return (
+    <>
+      <div className="lrty">
+    <div className="big-container">
+ 
+ <div className="hddmange">
+ <h1>Quora</h1>
+        <p>A place to share knowledge and better understand the world</p>
+ </div>
+ <div className="flxmanage">
+      <div className="left-container">
+        <p className="pgtxt">By continuing you indicate tha you agree to Quora's Terms of Service and Privacy Policy.</p>
+        <Link to="/registration"> <button className="emdli">Continue with Gmail</button></Link>
+       
+      </div>
     <div className="container">
-      <h1>Login</h1>
+      <p  className="movhdr">Login</p>
       <form onSubmit={handleSubmit}>
         <label>
           Username
-          <input type="text" value={username} onChange={handleUsername} />
+          <input className="p_cont"type="text" value={username} onChange={handleUsername}  placeholder="enter your username"/>
         </label>
-        <br />
+   
         <label>
           Password
-          <input type="password" value={password} onChange={handlePassword} />
+          <input className="p_cont"type="password" value={password} onChange={handlePassword} placeholder="enter your password"/>
         </label>
-        <br />
+       
         <button type="submit">Login</button>
-        <p>Don't have an account <Link to="/registration">Please Register</Link></p>
+     
       </form>
     </div>
+    </div>
+    </div>
+    </div>
+    </>
   );
 }
 
